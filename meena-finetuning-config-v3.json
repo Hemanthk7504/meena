@@ -1,0 +1,20 @@
+{
+  "vocab_path" : "bert-base-uncased-vocab.txt",
+  "data_path" :"dialogs.txt" ,
+  "checkpoint_path" : "data/",
+  "cache_path" : "cache/",
+  "model_name": "finetuning-v3",
+  "dim": 2560,
+  "encoder_depth": 1,
+  "decoder_depth": 9,
+  "n_head": 32,
+  "max_seq_len" : 128,
+  "dropout_prob": 0.1,
+  "batch_size" : 10,
+  "epochs" : 5,
+  "log_steps" : 1,
+  "ckpt_steps" : 2000,
+  "gradient_accumulation_steps": 512,
+  "fp16": true,
+  "fp16_opt_level": "O2"
+}
